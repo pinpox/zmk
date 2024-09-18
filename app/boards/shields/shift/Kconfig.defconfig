@@ -1,0 +1,12 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_SHIFT
+
+config ZMK_KEYBOARD_NAME
+    default "shift"
+
+config SPI
+    default y
+    
+endif

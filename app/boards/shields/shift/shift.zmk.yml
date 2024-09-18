@@ -1,0 +1,8 @@
+file_format: "1"
+id: shift
+name: shift
+type: shield
+url: https://github.com/dcpedit/shift
+requires: [pro_micro]
+features:
+  - keys
