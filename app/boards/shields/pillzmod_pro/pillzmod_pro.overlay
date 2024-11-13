@@ -5,6 +5,11 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "pillzmod_pro-layouts.dtsi"
+
+&physical_layout0 {
+    transform = <&matrix_transform>;
+};
 
 &pro_micro_spi {
 	status = "okay";
@@ -23,7 +28,7 @@
 / {
 	chosen {
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
+		zmk,physical-layout = &physical_layout0;
 	};
 
 	aliases {
@@ -46,7 +51,7 @@
     };
   };
 
-	default_transform: keymap_transform_0 {
+	matrix_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
 		columns = <7>;
 		rows = <15>;
