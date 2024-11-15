@@ -6,3 +6,4 @@ url: https://github.com/dcpedit/pillzmod
 requires: [pillbug]
 features:
   - keys
+  - studio
